@@ -1,0 +1,75 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
+
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+
+/*  Start Here */
+
+
+.dropdown {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #fff ;
+  background-color: #000;
+  color: #fff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  background-color: #222;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  width: 220px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  margin: auto;
+  padding: 12px;
+  top: 100%;
+}
+
+.dropdown-menu.visible {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 4px;
+  background-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dropdown-item:hover {
+  background-color: #222;
+}
